@@ -1,0 +1,32 @@
+# install OpenLdap
+
+sudo apt-get install slapd ldap-utils
+sudo dpkg-reconfigure slapd
+
+#first Search 
+sudo ldapsearch -Q -L -Y EXTERNAL -H ldapi:/// -b dc=spidergeek
+sudo dpkg-reconfigure slapd
+
+#result
+version: 1
+
+#
+# LDAPv3
+# base <dc=spidergeek,dc=com> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# spidergeek.com
+dn: dc=spidergeek,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: spidergeek
+dc: spidergeek
+
+# search result
+
+# numResponses: 2
+# numEntries: 1
+                 
