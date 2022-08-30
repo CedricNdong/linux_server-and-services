@@ -1,0 +1,86 @@
+#Ajout d’une “OU” Personnes, pour les membres de l’association
+dn: ou=Personnes,dc=leplatrenumerique,dc=org
+description: Genre de catégorie mere des personnes physique
+ou: Personnes
+objectClass: organizationalUnit
+
+#Ajout d’une “OU” Bureau, une sous catégorie de Personnes, pour les membres du bureau de l’association
+dn: ou=Bureau,ou=Personnes,dc=leplatrenumerique,dc=org
+description: Membres du bureau
+ou: Bureau
+objectClass: organizationalUnit
+
+#Ajout d’une “OU” Membres, une sous catégorie de Personnes, pour les membres de l’association
+dn: ou=Membres,ou=Personnes,dc=leplatrenumerique,dc=org
+description: Membres de l association
+ou: Membres
+objectClass: organizationalUnit
+
+#Ajout d’une “OU” équipement, pour les différents équipements de l’association
+dn: ou=Equipement,dc=leplatrenumerique,dc=org
+description: Equipement de l association
+ou: Equipement
+objectClass: organizationalUnit
+
+#Ajout d’une “OU” Pc, sous catégorie de l’ou Equipement, pour les différents pc de l’association
+dn: ou=pc,ou=Equipement,dc=leplatrenumerique,dc=org
+description: les PC de l association
+ou: pc
+objectClass: organizationalUnit
+
+#Ajout d’une “OU” tablette, sous catégorie de l’ou Equipement, pour les différents tablettes de l’association
+dn: ou=Tablette,ou=Equipement,dc=leplatrenumerique,dc=org
+description: Equipement de l association
+ou: Equipement
+objectClass: organizationalUnit
+
+#Ajout des membres du bureau
+dn: cn=Eric Dumont,ou=Bureau,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: edumont
+uid: edumont
+givenName: Eric
+sn: Dumont
+cn: Eric Dumont
+objectClass: inetOrgPerson
+
+dn: cn=Brewenn Marhic,ou=Bureau,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: bmarhic
+uid: bmarhic
+givenName: Brewenn
+sn: Marhic
+cn: Brewenn Marhic
+objectClass: inetOrgPerson
+
+dn: cn=Aenor Leduff,ou=Bureau,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: aleduff
+uid: aleduff
+givenName: Aenor
+sn: Leduff
+cn: Aenor Leduff
+objectClass: inetOrgPerson
+
+
+#Ajout des membres hors bureau
+dn: cn=Elea Lastour,ou=Membres,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: elastour
+uid: elastour
+givenName: Elea
+sn: Lastour
+cn: Elea Lastour
+objectClass: inetOrgPerson
+
+dn: cn=Luc Sanchez,ou=Membres,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: lsanchez
+uid: lsanchez
+givenName: Luc
+sn: Sanchez
+cn: Luc Sanchez
+objectClass: inetOrgPerson
+
+dn: cn=Jean Delasource,ou=Membres,ou=Personnes,dc=leplatrenumerique,dc=org
+userPassword: jdelasource
+uid: jdelasource
+givenName: Jean
+sn: Delasource
+cn: Jean Lapiece
+objectClass: inetOrgPerson 
