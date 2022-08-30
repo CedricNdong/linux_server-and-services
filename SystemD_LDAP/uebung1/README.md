@@ -4,3 +4,5 @@ One of your friends, a trainer by profession and a founding member of the associ
 
 During this meeting, the association's office provides you with the following organisation chart:
 
+![to do](/images/path/to/folder/todoImg.png "Image of Ldap")
+
