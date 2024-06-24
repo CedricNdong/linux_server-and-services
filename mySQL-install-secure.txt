@@ -1,0 +1,13 @@
+$ sudo apt update
+
+##To install MySQL, you just have to install the package mariadb-server and then the meta package default-mysql-server.
+$ sudo apt install mariadb-server
+
+## The first thing to do next is to secure the default MySQL installation which is not suitable for a production environment. MySQL provides you with the mysq_secure_installation utility to make your life easier:
+
+$ sudo mysql_secure_installation
+
+after just click Yes
+
+## Test for  MariaDB
+$ sudo systemctl status mariadb

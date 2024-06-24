@@ -1,0 +1,16 @@
+Prerequisites:
+An ANSI C compiler.
+Module-specific components like GD graphics libraries or PDF libraries.
+Optional: Autoconf 2.59+ (for PHP versions < 7.0),
+Autoconf 2.64+ (for PHP versions > 7.2), 
+Automake 1.4+, Libtool 1.4+, re2c 0.13.4+, and Bison.
+
+$ sudo apt-get update
+
+$ sudo apt-get upgrade
+
+$ sudo apt-get install php
+
+$ php --version
+
+
